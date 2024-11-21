@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Animal</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Animal</h1>
+        <nav>
+            <a href="/animals">Back to Animals List</a>
+        </nav>
+    </header>
+    <main>
+        <form action="/animals/add" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="species">Species:</label>
+            <input type="text" id="species" name="species" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="habitat">Habitat:</label>
+            <input type="text" id="habitat" name="habitat" required>
+            
+            <button type="submit" class="button add">Add Animal</button>
+        </form>
+    </main>
+</body>
+</html>

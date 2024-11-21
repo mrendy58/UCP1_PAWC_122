@@ -1,0 +1,26 @@
+<% include layouts/main-layout %>
+<h1><%= title %></h1>
+<form action="<%= animal ? '/animals/edit/' + animal.id : '/animals/add' %>" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="<%= animal ? animal.name : '' %>" required>
+
+  <label for="species">Species:</label>
+  <input type="text" id="species" name="species" value="<%= animal ? animal.species : '' %>" required>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" value="<%= animal ? animal.age : '' %>" required>
+
+  <label for="habitat">Habitat:</label>
+  <input type="text" id="habitat" name="habitat" value="<%= animal ? animal.habitat : '' %>" required>
+
+  <button type="submit"><%= animal ? 'Update' : 'Add' %> Animal</button>
+</form>
+<form action="/animals/edit/<%= animal.id %>" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="<%= animal.name %>" required>
+    <label for="species">Species:</label>
+    <input type="text" id="species" name="species" value="<%= animal.species %>" required>
+    <button type="submit">Update Animal</button>
+</form>
+
+<a href="/animals">Back to Animals List</a>

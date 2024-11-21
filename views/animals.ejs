@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1><%= title %></h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/animals/add">Add New Animal</a>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Species</th>
+                    <th>Age</th>
+                    <th>Habitat</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% animals.forEach(animal => { %>
+                    <tr>
+                        <td><%= animal.name %></td>
+                        <td><%= animal.species %></td>
+                        <td><%= animal.age %></td>
+                        <td><%= animal.habitat %></td>
+                        <td class="action-column">
+                            <form action="/animals/edit/<%= animal.id %>" method="GET" style="display:inline;">
+                                <button type="submit" class="edit">Edit</button> <!-- Tombol Edit -->
+                            </form>
+                            <form action="/animals/delete/<%= animal.id %>" method="POST" style="display:inline;">
+                                <button type="submit" class="delete">Delete</button> <!-- Tombol Delete -->
+                            </form>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

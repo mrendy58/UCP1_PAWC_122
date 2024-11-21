@@ -1,0 +1,150 @@
+/* Halaman Home */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7; /* Memberikan efek transparan pada gambar */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan pada teks */
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+.button {
+    padding: 10px 20px;
+    background: #4CAF50; /* Warna hijau */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #45a049; /* Warna hijau lebih gelap saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Halaman Animals */
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #008CBA;
+    color: white;
+}
+
+table td {
+    text-align: left; /* Untuk kolom normal */
+}
+
+.action-column {
+    text-align: center; /* Memusatkan tombol dalam kolom Actions */
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button.edit {
+    background: #4CAF50; /* Warna hijau */
+    color: white;
+}
+
+button.edit:hover {
+    background: #45a049; /* Warna hijau lebih gelap saat hover */
+}
+
+button.delete {
+    background: #f44336; /* Warna merah */
+    color: white;
+}
+
+button.delete:hover {
+    background: #d32f2f; /* Warna merah lebih gelap saat hover */
+}
+
+form {
+    display: inline; /* Menjaga form dalam satu baris */
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+.button.add {
+    padding: 10px 20px;
+    background: #4CAF50; /* Warna hijau */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghapus border */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background 0.3s; /* Animasi saat hover */
+}
+
+.button.add:hover {
+    background: #45a049; /* Warna hijau lebih gelap saat hover */
+}
